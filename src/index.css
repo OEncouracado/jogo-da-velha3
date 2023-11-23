@@ -5,9 +5,115 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://img.wallpapic-br.com/i104-415-99/medium/mundo-da-fantasia-natureza-montanhas-videogame-de-estrategia-imagem-de-fundo.jpg);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Adicione estilos ao seu gosto */
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.imagem3 {
+  width: 10rem;
+  margin: auto;
+  padding-left: -20px;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./images/papertexture.avif');
+  background-position: center;
+  background-size: cover;
+}
+
+.board-row {
+  display: flex;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Ou row, dependendo da orientação desejada */
+  margin-right: 20px; /* Adicione a margem desejada para separar a mão do tabuleiro */
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  border: #999 solid;
+  background-color: #303030;
+  color: white;
+  margin-bottom: 7rem;
+}
+
+.square {
+  border: 0.2rem double rgb(77, 15, 15);
+  float: left;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 34px;
+  height: 5rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 5rem;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.square.selected {
+  background-color: #aaffaa; /* Cor de fundo para destacar a marcação selecionada */
+}
+.hand-square {
+  background-color: #ddd;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.hand-square.selected {
+  background-color: #aaffaa; /* Cor de fundo para destacar a peça selecionada na mão */
+}
+
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FundoTabuleiro{
+  background-color: wheat;
+  background-image: url('./images/papiro.avif');
+  height: 100vh;
+  border-width: 0.2rem; /* Largura da borda */
+  border-style: solid;
+  border-color: #000000;
 }
