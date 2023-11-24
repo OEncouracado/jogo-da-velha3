@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Container, Modal } from 'react-bootstrap';
-import tres from '../images/3.png'
+
 
 const calculateWinner = (squares) => {
     const lines = [
@@ -96,8 +96,7 @@ const JogoDaVelha3 = () => {
     <><div className='FundoTabuleiro'>
         <div className='m-3 w-auto align-items-center justify-content-center d-flex flex-column'>
         <Container className='d-flex align-items-center'>
-          <h1 className="mb-3 titulo" style={{ zIndex: 2 }}>JOGO DA VELHA</h1>
-          <img className="imagem3" src={tres} alt="tres" style={{ zIndex: 1 }} />
+          <h1 className="mb-3 titulo" style={{ zIndex: 2 }}>JOGO DA VELHA 3</h1>
     </Container>
           <div className="status p-1">{status}</div>
           <div className="board-row">

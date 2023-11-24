@@ -117,3 +117,7 @@ ol, ul {
   border-style: solid;
   border-color: #000000;
 }
+
+.disjuntor{
+  width: 7rem;
+}
